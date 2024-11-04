@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #35424a;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    color: #ffffff;
+    position: relative;
+    bottom: 0;
+    width:100%
+}
+.contact-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.contact-item i {
+    font-size: 24px;
+    color: #35424a; /* لون الأيقونات */
+    margin-left: 10px;
+}
+
+.contact-item p {
+    margin-left: 10px;
+    font-size: 16px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #35424a; /* لون الحدود */
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.input-container i {
+    font-size: 20px;
+    color: #35424a; /* لون الأيقونات */
+    margin-left: 10px;
+}
+
+.input-container input,
+.input-container textarea {
+    border: none;
+    outline: none;
+    flex: 1; /* ليأخذ الحقل المساحة المتبقية */
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.input-container textarea {
+    resize: vertical; /* يسمح بتغيير حجم textarea عمودياً فقط */
+    height: 100px; /* ارتفاع محدد لـ textarea */
+}
+
+button {
+    background-color: #35424a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #47545e; /* لون خلفية عند التحويم */
+}
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* شبكة مرنة للصور */
+    gap: 15px; /* المسافة بين الصور */
+    margin-top: 20px;
+}
+
+.project-item img {
+    width: 100%; /* عرض الصورة لتتناسب مع الحاوية */
+    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    border-radius: 5px; /* زوايا مدورة للصورة */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* ظل خفيف للصورة */
+}
